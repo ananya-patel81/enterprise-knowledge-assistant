@@ -1,4 +1,4 @@
-# 🧠 Enterprise Knowledge Assistant (RAG)
+# Enterprise Knowledge Assistant (RAG)
 
 A Retrieval-Augmented Generation (RAG) system that lets users upload
 company documents (PDF, TXT, Markdown) and ask natural-language
