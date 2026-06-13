@@ -1,0 +1,58 @@
+Acme Corp — IT Security Policy (Excerpt)
+
+1. PASSWORD POLICY
+
+All employees must use passwords that are at least 12 characters long
+and include a mix of uppercase letters, lowercase letters, numbers, and
+symbols. Passwords must be rotated every 90 days. Reuse of the last 5
+passwords is not permitted.
+
+To reset a forgotten password, employees should visit the Identity
+Portal at id.acmecorp.internal and select "Forgot Password". A
+verification code will be sent to the employee's registered mobile
+number. If the employee no longer has access to that number, they must
+contact the IT Helpdesk in person with their employee ID badge.
+
+2. MULTI-FACTOR AUTHENTICATION (MFA)
+
+MFA is mandatory for all systems that store customer data, including
+the CRM, the billing system, and all production databases. Employees
+must enroll in MFA using the Acme Authenticator app within their first
+3 days of joining.
+
+3. DEVICE SECURITY
+
+All company laptops must have disk encryption enabled (BitLocker on
+Windows, FileVault on macOS). Lost or stolen devices must be reported
+to the Security team within 1 hour of discovery, by emailing
+security@acmecorp.com or calling the 24/7 security hotline.
+
+4. DATA CLASSIFICATION
+
+Data is classified into four tiers:
+- Public: marketing materials, public documentation.
+- Internal: meeting notes, internal wikis, non-sensitive emails.
+- Confidential: source code, financial reports, HR records.
+- Restricted: customer PII, payment information, security credentials.
+
+Restricted data may only be stored in approved systems (the production
+database and the encrypted secrets vault). Restricted data must never
+be copied to personal devices, USB drives, or third-party cloud storage
+such as personal Google Drive or Dropbox accounts.
+
+5. INCIDENT RESPONSE
+
+In the event of a suspected security breach, employees must immediately
+notify the Security team and avoid discussing the incident on public
+channels (including company-wide Slack channels) until the Security
+team has issued guidance. The Security team will follow the documented
+Incident Response Runbook, which includes containment, eradication,
+recovery, and a post-incident review within 5 business days.
+
+6. THIRD-PARTY ACCESS
+
+Vendors and contractors requiring access to internal systems must be
+sponsored by an internal employee and undergo a security review by the
+Security team before provisioning any credentials. Vendor access is
+automatically revoked 90 days after the contract end date unless
+explicitly renewed.

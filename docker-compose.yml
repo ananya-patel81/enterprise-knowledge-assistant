@@ -1,0 +1,39 @@
+# docker-compose.yml
+# ===================
+#
+# Runs the FastAPI backend and Streamlit frontend together, sharing a
+# data volume so the SQLite DB, FAISS index, and uploaded files persist
+# across restarts.
+#
+# Usage:
+#   docker compose up --build
+#
+# Then open:
+#   - Frontend: http://localhost:8501
+#   - API docs: http://localhost:8000/docs
+
+services:
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    env_file:
+      - .env
+    volumes:
+      - knowledge_data:/app/data
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+    ports:
+      - "8501:8501"
+    environment:
+      - API_URL=http://backend:8000
+    depends_on:
+      - backend
+
+volumes:
+  knowledge_data:

@@ -1,0 +1,19 @@
+# Environment
+.env
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Data (generated at runtime - keep repo clean)
+data/
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
