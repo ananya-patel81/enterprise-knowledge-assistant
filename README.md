@@ -5,10 +5,6 @@ company documents (PDF, TXT, Markdown) and ask natural-language
 questions about them — with every answer backed by **citations** to the
 exact source document and chunk.
 
-Built as a focused, defensible portfolio project: small tech stack,
-clear architecture, and every design decision documented and explained
-below.
-
 ---
 
 ## Table of Contents
