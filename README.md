@@ -342,16 +342,12 @@ These are intentionally **not implemented**, to keep the project focused
 — but are natural "next steps" to discuss in interviews:
 
 - **PostgreSQL** — for multi-user concurrent access and larger datasets.
-- **Reranking** — use a cross-encoder model to re-score the top-N
-  retrieved chunks for higher precision before sending to the LLM.
 - **Hybrid Retrieval** — combine vector and BM25 scores (e.g. weighted
   sum or Reciprocal Rank Fusion) instead of choosing one.
 - **Enterprise Authentication** — SSO/OAuth so different users/teams see
   only the documents they're authorized to access.
-- **Approximate FAISS indexes** (e.g. `IndexHNSWFlat`, `IndexIVFFlat`)
-  for scaling to millions of chunks.
-- **Background ingestion** — move document processing to a task queue
-  for large files instead of blocking the upload request.
+- **Webpage uploading** — webpages too can be uploaded and using html parsing
+  information from there could be extracted. 
 
 ---
 
@@ -383,6 +379,3 @@ These are intentionally **not implemented**, to keep the project focused
 
 ---
 
-## License
-
-MIT — feel free to fork and adapt for your own portfolio.
